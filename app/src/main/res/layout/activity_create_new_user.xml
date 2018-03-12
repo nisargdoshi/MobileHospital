@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobilehospital.nisargdoshi.mobilehospital.create_new_user">
+
+    <EditText
+        android:id="@+id/et_patient_fname"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="98dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/et_patient_lname"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_patient_fname"
+        android:layout_alignBottom="@+id/et_patient_fname"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/et_patient_fname"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_patient_uname"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_patient_fname"
+        android:layout_below="@+id/et_patient_fname"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_patient_pwd"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_patient_uname"
+        android:layout_below="@+id/et_patient_uname"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_patient_dob"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_patient_pwd"
+        android:layout_below="@+id/et_patient_pwd"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Date of birth(DD/MM/YYYY))"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btn_patinent_crtacc"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_patient_dob"
+        android:layout_below="@+id/et_patient_dob"
+        android:layout_marginTop="22dp"
+        android:text="Create Account" />
+
+</RelativeLayout>

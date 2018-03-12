@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mobilehospital.nisargdoshi.mobilehospital.View_patient_profile"
+    tools:showIn="@layout/activity_view_patient_profile">
+
+    <TextView
+        android:id="@+id/tv_displayname_patient_view"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/iv_prifilepic_patient_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/iv_prifilepic_patient_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+    <TextView
+        android:id="@+id/tv_email_patient_view"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/tv_displayname_patient_view"
+        android:layout_below="@+id/tv_displayname_patient_view"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_birthdate_patient_view"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_email_patient_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textStyle="normal" />
+</RelativeLayout>

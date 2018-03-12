@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_finddoctor"
+            android:title="Find Doctor" />
+        <item
+            android:id="@+id/nav_buymedicien"
+            android:title="Buy Medicien" />
+        <item
+            android:id="@+id/nav_donate"
+            android:title="Donate" />
+        <item
+            android:id="@+id/nav_need"
+
+            android:title="Need" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_rateus"
+            android:title="Rate us" />
+        <item
+            android:id="@+id/nav_helpandcontactus"
+            android:title="Help Contactus " />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

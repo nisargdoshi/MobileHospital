@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobilehospital.nisargdoshi.mobilehospital.patient_Signup">
+
+
+    <EditText
+        android:id="@+id/et_exp_fname"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"/>
+
+    <EditText
+        android:id="@+id/et_exp_lname"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/et_exp_fname"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/et_exp_fname"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"/>
+
+    <EditText
+        android:id="@+id/et_exp_email"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_exp_fname"
+        android:layout_below="@+id/et_exp_fname"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"/>
+
+    <EditText
+        android:id="@+id/et_exp_pwd"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_exp_email"
+        android:layout_below="@+id/et_exp_email"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/et_exp_location"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_exp_uprn"
+        android:layout_below="@+id/et_exp_uprn"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Physical Location"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_exp_contact"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_exp_location"
+        android:layout_below="@+id/et_exp_location"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_apply_approve"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_check_status"
+        android:layout_alignStart="@+id/et_exp_contact"
+        android:layout_marginBottom="11dp"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/tv_check_status"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_exp_uprn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="12dp"
+        android:clickable="true"
+        android:text="Check your aproval status" />
+
+    <EditText
+        android:id="@+id/et_exp_uprn"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter UPRN number"
+        android:layout_alignStart="@+id/et_exp_pwd"
+        android:layout_below="@+id/et_exp_pwd"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+</RelativeLayout>

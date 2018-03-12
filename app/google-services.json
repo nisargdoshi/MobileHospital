@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "719985859091",
+    "firebase_url": "https://mobile-hospital.firebaseio.com",
+    "project_id": "mobile-hospital",
+    "storage_bucket": "mobile-hospital.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719985859091:android:1f7493bc38355671",
+        "android_client_info": {
+          "package_name": "com.mobilehospital.nisargdoshi.mobilehospital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719985859091-6lumrqk386po0s6djib3v5221do6okh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobilehospital.nisargdoshi.mobilehospital",
+            "certificate_hash": "4385b88f715ff12c38eaa675ea10cf0d0dc475c3"
+          }
+        },
+        {
+          "client_id": "719985859091-i24nk51oqfvat8psv6kld1b9j0l4k5ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZLCXWVLdA0tL2JovQUpQkEBINDM8xLEo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719985859091-i24nk51oqfvat8psv6kld1b9j0l4k5ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

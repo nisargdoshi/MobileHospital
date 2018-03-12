@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mobile Hospital</string>
+    <string name="title_activity_login">Login</string>
+    <string name="facebook_app_id">219737698592802</string>
+    <string name="fb_login_protocol_scheme">fb219737698592802</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="track_path_on_map">Walk and route your path on map</string>
+    <string name="permission_notice">Please note that your location permission is important if you want to draw your route on map while walking or running</string>
+    <string name="permission_title">Location Permission Denied</string>
+    <string name="cancel_permission_notice">Wow, please come back again when you need it and grant the permission</string>
+    <string name="title_activity_home_doctor">Home_doctor</string>
+    <string name="title_activity_view_patient_profile">View_patient_profile</string>
+
+</resources>
