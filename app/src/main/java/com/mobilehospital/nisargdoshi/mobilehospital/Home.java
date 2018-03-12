@@ -179,7 +179,8 @@ public class Home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         if (id == R.id.nav_finddoctor) {
-            // Handle the camera action
+            Intent i =new Intent(Home.this,ShowLocationActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_buymedicien) {
 
         } else if (id == R.id.nav_helpandcontactus) {

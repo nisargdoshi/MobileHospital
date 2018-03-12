@@ -47,15 +47,9 @@ dependencies {
     compile 'com.github.hotchemi:android-rate:1.0.1'
     compile 'com.firebaseui:firebase-ui-storage:0.6.0'
 
-/**
- * HyperTrack SDKs are shipped as @aar formats. Include the HyperTrack SDK's
- * latest version as specified below. For detailed SDK changelog, Refer to
- * https://docs.hypertrack.com/sdks/android/changelog.html.
- *
- * transitive = true, enables the SDK to include its internal dependencies
- * automatically. Refer here for more info on HyperTrack SDK dependencies.
- */
 }
+
+
 
 
 apply plugin: 'com.google.gms.google-services'

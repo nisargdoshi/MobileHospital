@@ -50,7 +50,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+                    </activity>
 
         <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
@@ -103,7 +103,8 @@
         <activity
             android:name=".View_patient_profile"
             android:label="@string/title_activity_view_patient_profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <receiver
             android:name=".ConnectivityReceiver"
             android:enabled="true">
@@ -111,6 +112,9 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
+
+        <activity android:name=".ShowLocationActivity">
+        </activity>
     </application>
 
 </manifest>
