@@ -17,5 +17,36 @@
     <string name="cancel_permission_notice">Wow, please come back again when you need it and grant the permission</string>
     <string name="title_activity_home_doctor">Home_doctor</string>
     <string name="title_activity_view_patient_profile">View_patient_profile</string>
+    <string-array name="Stuff">
+        <item>Blood</item>
+        <item>Kidney </item>
+        <item>WBC</item>
+        <item>RBC</item>
+        <item>Eyes</item>
+    </string-array>
+
+    <string-array name="doctor_category">
+        <item>Heart Attack,High Blood Pressure,Irregular Heartbeat</item>
+        <item>Asthma,Eczema,Food Allergies, Insect Sting Allergies</item>
+        <item>Colon cancer, Hemorrhoids,Inflammatory Bowel Disease</item>
+        <item>Critical care</item>
+        <item>Skin,Hair,Nails</item>
+        <item>Diabetes,Thyroid Problems,Infertility,Calcium,Bone Disorders</item>
+        <item>General Checkup </item>
+        <item>Stomach,Bowels,Pancreas,Liver,Gallbladder</item>
+        <item>Fevers,Lyme Disease, Pneumonia, Tuberculosis,HIV AIDS</item>
+    </string-array>
+
+    <string-array name="doctor_type">
+        <item>Cardiologists </item>
+        <item>Allergists/Immunologists</item>
+        <item>Colon and Rectal Surgeons</item>
+        <item>Critical Care Medicine Specialists</item>
+        <item>Dermatologists</item>
+        <item>Endocrinologists</item>
+        <item>Family Physicians </item>
+        <item>Gastroenterologists</item>
+        <item> Infectious Disease Specialists </item>
+    </string-array>
 
 </resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/sp_patient_category"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_patient_need_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:entries="@array/Stuff"/>
+
+    <TextView
+        android:id="@+id/tv_patient_need_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/sp_patient_category"
+        android:layout_marginTop="21dp"
+        android:text="What ypu need?"
+        />
+</RelativeLayout>

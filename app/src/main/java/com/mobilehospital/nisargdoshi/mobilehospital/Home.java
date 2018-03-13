@@ -1,6 +1,8 @@
 package com.mobilehospital.nisargdoshi.mobilehospital;
 
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.Image;
@@ -9,6 +11,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +24,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -55,7 +59,7 @@ public class Home extends AppCompatActivity
     String uprn;
     FirebaseStorage storage;
     StorageReference storageReference;
-
+    final Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -179,15 +183,83 @@ public class Home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         if (id == R.id.nav_finddoctor) {
-            Intent i =new Intent(Home.this,ShowLocationActivity.class);
-            startActivity(i);
-        } else if (id == R.id.nav_buymedicien) {
+
+
+
+            LayoutInflater li = LayoutInflater.from(context);
+            View promptsView = li.inflate(R.layout.find_doctor_patient_dialog, null);
+
+            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                    context);
+            alertDialogBuilder.setView(promptsView);
+
+
+            // set dialog message
+            alertDialogBuilder
+                    .setCancelable(false)
+                    .setTitle("Update Basic Information")
+                    .setPositiveButton("Find", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent find =new Intent(Home.this,ShowLocationActivity.class);
+                            startActivity(find);
+                        }
+                    })
+                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    });
+
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
+
+}
+                                else if (id == R.id.nav_buymedicien) {
 
         } else if (id == R.id.nav_helpandcontactus) {
 
         } else if (id == R.id.nav_rateus) {
 
         } else if (id == R.id.nav_donate) {
+            LayoutInflater li = LayoutInflater.from(context);
+            View promptsView = li.inflate(R.layout.patient_need_dialogbox, null);
+            TextView tvhead=(TextView)promptsView.findViewById(R.id.tv_patient_need_view);
+            Spinner spcategory=(Spinner)promptsView.findViewById(R.id.sp_patient_category);
+            tvhead.setText("What you want to donate?");
+            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                    context);
+            alertDialogBuilder.setView(promptsView);
+
+
+            // set dialog message
+            alertDialogBuilder
+                    .setCancelable(false)
+                    .setTitle("Donate and Help to other!")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent find =new Intent(Home.this,ShowLocationActivity.class);
+                            startActivity(find);
+                        }
+                    })
+                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    });
+
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+
+            // show it
+            alertDialog.show();
+
 
         } else if (id == R.id.nav_logout) {
             mAuth.signOut();
@@ -205,7 +277,45 @@ public class Home extends AppCompatActivity
 
         }
         else if (id == R.id.nav_need) {
+            LayoutInflater li = LayoutInflater.from(context);
+            View promptsView = li.inflate(R.layout.patient_need_dialogbox, null);
+            TextView tvhead=(TextView)promptsView.findViewById(R.id.tv_patient_need_view);
+            final Spinner spcategory=(Spinner)promptsView.findViewById(R.id.sp_patient_category);
+
+             final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                    context);
+            alertDialogBuilder.setView(promptsView);
+
+
+            // set dialog message
+            alertDialogBuilder
+                    .setCancelable(false)
+                    .setTitle("Need anyhing? select ")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent find =new Intent(Home.this,ShowLocationActivity.class);
+                            startActivity(find);
+                            Toast.makeText(getBaseContext(),spcategory.getSelectedItem().toString(),Toast.LENGTH_LONG).show();
+
+                        }
+                    })
+                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    });
+
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+
+            // show it
+            alertDialog.show();
+
         }
+
+
 
 
 
