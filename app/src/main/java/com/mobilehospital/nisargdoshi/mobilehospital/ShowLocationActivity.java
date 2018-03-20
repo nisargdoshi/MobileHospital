@@ -63,8 +63,8 @@ public class ShowLocationActivity extends Activity implements LocationListener {
             System.out.println("Provider " + provider + " has been selected.");
             onLocationChanged(location);
         } else {
-            latituteField.setText("Location not available");
-            longitudeField.setText("Location not available");
+            //latituteField.setText("Location not available");
+            //location.setText("Location not available");
         }
     }
 

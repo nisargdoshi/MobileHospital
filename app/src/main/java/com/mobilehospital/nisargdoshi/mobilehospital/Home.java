@@ -229,7 +229,9 @@ public class Home extends AppCompatActivity
             LayoutInflater li = LayoutInflater.from(context);
             View promptsView = li.inflate(R.layout.patient_need_dialogbox, null);
             TextView tvhead=(TextView)promptsView.findViewById(R.id.tv_patient_need_view);
-            Spinner spcategory=(Spinner)promptsView.findViewById(R.id.sp_patient_category);
+            final Spinner spcategory=(Spinner)promptsView.findViewById(R.id.sp_patient_category);
+
+
             tvhead.setText("What you want to donate?");
             final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                     context);
@@ -243,8 +245,9 @@ public class Home extends AppCompatActivity
                     .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent find =new Intent(Home.this,ShowLocationActivity.class);
-                            startActivity(find);
+                            if(spcategory.getSelectedItem().toString().equals("Blood")){
+                            Intent find =new Intent(Home.this,patient_blood_donate.class);
+                            startActivity(find);}
                         }
                     })
                     .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -294,10 +297,9 @@ public class Home extends AppCompatActivity
                     .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent find =new Intent(Home.this,ShowLocationActivity.class);
-                            startActivity(find);
-                            Toast.makeText(getBaseContext(),spcategory.getSelectedItem().toString(),Toast.LENGTH_LONG).show();
-
+                            if(spcategory.getSelectedItem().toString().equals("Blood")){
+                                Intent find =new Intent(Home.this,patient_blood_need.class);
+                                startActivity(find);}
                         }
                     })
                     .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {

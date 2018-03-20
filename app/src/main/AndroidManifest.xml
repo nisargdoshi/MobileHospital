@@ -50,7 +50,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-                    </activity>
+        </activity>
 
         <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
@@ -113,8 +113,11 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".ShowLocationActivity">
-        </activity>
+        <activity android:name=".ShowLocationActivity" />
+        <activity android:name=".Buy_medicins" />
+        <activity android:name=".patient_blood_donate" />
+        <activity android:name=".patient_blood_need" />
+        <activity android:name=".bloodstatuscheck"></activity>
     </application>
 
 </manifest>

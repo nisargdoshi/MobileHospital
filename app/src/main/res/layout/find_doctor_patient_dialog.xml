@@ -5,7 +5,7 @@
     >
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/sp_category_finddoc"
         android:layout_width="300dp"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
@@ -14,7 +14,7 @@
         android:entries="@array/doctor_category"/>
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/rgb_emargancy_findoc"
         android:layout_width="230dp"
         android:layout_height="100dp"
        android:layout_marginLeft="30dp"
@@ -26,8 +26,8 @@
             android:id="@+id/radioButton3"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/radioGroup"
-            android:layout_toEndOf="@+id/radioGroup"
+            android:layout_below="@+id/rgb_emargancy_findoc"
+            android:layout_toEndOf="@+id/rgb_emargancy_findoc"
             android:text="High" />
 
         <RadioButton
@@ -50,20 +50,20 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/spinner"
-        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/sp_category_finddoc"
+        android:layout_below="@+id/sp_category_finddoc"
         android:layout_marginTop="18dp"
         android:text="Plase choose Level of Emargancy" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_finddoc_notes"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:textSize="6pt"
-        android:layout_alignEnd="@+id/spinner"
-        android:layout_below="@+id/radioGroup"
+        android:layout_alignEnd="@+id/sp_category_finddoc"
+        android:layout_below="@+id/rgb_emargancy_findoc"
         android:layout_marginEnd="7dp"
         android:layout_marginTop="20dp"
-        android:hint="Note" />
+        android:hint="Note"
+        android:textSize="6pt" />
 
 </RelativeLayout>
